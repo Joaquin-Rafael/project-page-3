@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Q2 Project2</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+<style>
+        #home {
+            position: absolute;
+            top: 10%;
+            left: 5%;
+            }
+        
+        #main {
+            position: relative;
+            }
+        
+        .navbar {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            z-index: 1000;
+            }
+
+        body {
+            background-color: #f8f9fa;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            padding-top: 90px;
+        }
+
+        .campus {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        .campus img {
+            width: 100%;
+            max-width: 350px;
+            height: 280px;
+            object-fit: cover;
+            border-radius: 10px;
+        }
+
+        .campus p {
+            margin-top: 12px;
+            font-size: 18px;
+            font-weight: bold;
+        }
+</style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#"><img src="https://images.squarespace-cdn.com/content/v1/664c7ae50eea9c731b37e817/7c5f2399-faf0-4b55-abef-0d5a936d20c5/OBMC+-+60TH+LOGO+-+DIAMOND+SLOGAN+-+APPROVED+-+2026+FA_OBMC+-+COLOR+HORIZONTAL.png?format=1500w" alt= "obmc_logo" class="img-fluid" style="height: 70px;"></a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mynavbar">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="mynavbar">
+      <ul class="navbar-nav me-auto">
+        <li class="nav-item">
+            <a class="nav-link" href="index.html">Home Page</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="page2.html">Courses Offer</a>
+        </li>
+        <li  class="nav-item">
+            <a class="nav-link" href="page3.html">Enroll Now</a>
+        </li>
+        <li  class="nav-item">
+            <a class="nav-link" href="page4.html">Contact us</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="page5.html">About the Group Member</a>
+        </li>
+      </ul>
+
+      <form class="d-flex">
+        <a href="https://obmontessori.orangeapps.ph/landing/obmontessori/" class="Portal">
+        <button class="btn btn-primary" type="button">My Portal</button></a>
+      </form>
+    </div>
+  </div>
+</nav>
+
+ <section class="position-relative overflow-hidden py-5 bg-light" id="enroll">
+
+  <img src="https://images.squarespace-cdn.com/content/v1/664c7ae50eea9c731b37e817/51bf9a1b-c4fc-42b1-abe6-945af52780da/OBMC+MONTESSORI+AN+1+-+AY+2026+FA.jpg"
+    class="position-absolute top-0 start-0 w-100 h-100 object-fit-cover"
+    style="filter: blur(5px);" alt="">
+
+  <!-- Dark overlay so the white title stays readable (optional, remove if not needed) -->
+  <div class="position-absolute top-0 start-0 w-100 h-100 bg-dark" style="opacity: .35;"></div>
+
+  <div class="container position-relative">
+
+    <div class="d-flex align-items-center justify-content-center gap-3 text-white">
+      <img class="rounded-circle bg-white p-1" width="64" height="64"
+        src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSffsm2n4xf-Ake_7FjbIElN4zOydP5HGxF899j-8bZJQ&s=10"
+        alt="OBMC logo">
+      <h2 class="display-5 mb-0" style="font-family: Georgia, 'Times New Roman', serif;">OBMC Student Enrollment Form</h2>
+    </div>
+    <p class="text-center text-white mt-3 mb-4">Fill out the form below to enroll for the upcoming school year.</p>
+
+    <form class="card bg-white text-dark border-0 shadow p-4" style="--bs-bg-opacity: .95;">
+
+      <h3 class="h5 mb-3">Student Information</h3>
+      <div class="row g-3">
+        <div class="col-md-6">
+          <label for="firstName" class="form-label">First Name</label>
+          <input type="text" class="form-control" id="firstName" placeholder="John" required>
+        </div>
+        <div class="col-md-6">
+          <label for="lastName" class="form-label">Last Name</label>
+          <input type="text" class="form-control" id="lastName" placeholder="Doe" required>
+        </div>
+        <div class="col-md-4">
+          <label for="birthDate" class="form-label">Birth Date</label>
+          <input type="date" class="form-control" id="birthDate" required>
+        </div>
+        <div class="col-md-4">
+          <label for="gender" class="form-label">Gender</label>
+          <select class="form-select" id="gender" required>
+            <option value="" selected disabled>Select...</option>
+            <option>Male</option>
+            <option>Female</option>
+          </select>
+        </div>
+        <div class="col-md-4">
+          <label for="grade" class="form-label">Grade Level</label>
+          <select class="form-select" id="grade" required>
+            <option value="" selected disabled>Select...</option>
+            <option>Nursery</option>
+            <option>Kindergarten</option>
+            <option>Grade 1</option>
+            <option>Grade 2</option>
+            <option>Grade 3</option>
+            <option>Grade 4</option>
+            <option>Grade 5</option>
+            <option>Grade 6</option>
+          </select>
+        </div>
+      </div>
+
+      <h3 class="h5 mt-4 mb-3">Contact Details</h3>
+      <div class="row g-3">
+        <div class="col-12">
+          <label for="email" class="form-label">Email Address</label>
+          <input type="email" class="form-control" id="email" placeholder="student@example.com" required>
+        </div>
+        <div class="col-12">
+          <label for="phone" class="form-label">Contact Number</label>
+          <input type="tel" class="form-control" id="phone" placeholder="63+ 0912-345-6789" required>
+        </div>
+      </div>
+
+      <h3 class="h5 mt-4 mb-3">Other Information</h3>
+      <p class="mb-1">Mode of Learning</p>
+      <div class="form-check">
+        <input class="form-check-input" type="radio" name="mode" id="online" required>
+        <label class="form-check-label" for="online">Online</label>
+      </div>
+      <div class="form-check">
+        <input class="form-check-input" type="radio" name="mode" id="faceToFace">
+        <label class="form-check-label" for="faceToFace">Face-to-Face</label>
+      </div>
+      <div class="form-check">
+        <input class="form-check-input" type="radio" name="mode" id="noPreference">
+        <label class="form-check-label" for="noPreference">No Preference</label>
+      </div>
+
+      <div class="form-check mt-3">
+        <input class="form-check-input" type="checkbox" id="confirm" required>
+        <label class="form-check-label" for="confirm">I confirm that the information provided is true and complete.</label>
+      </div>
+
+      <div class="text-center mt-4">
+        <button type="submit" class="btn btn-primary btn-lg px-4">Submit Enrollment</button>
+      </div>
+
+    </form>
+  </div>
+</section>
+
+  
+</body>
+
+</html>
